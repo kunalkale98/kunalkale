@@ -1,7 +1,8 @@
 #!/bin/bash -x
 
-echo "Enter a number to check its palindrome or not:"
-num=$1
+#echoEnter a number to check its palindrome or not:"
+#num=$1
+read -p 'Enter a number to check palindrome or not:' num
 
 function palindrome() {
 	local num=$1
