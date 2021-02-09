@@ -1,6 +1,6 @@
 #!/bin/bash -x
 
-num=$1
+read -p 'Enter a number to check prime and palindrome:' num
 
 function isPrime() {
 	local n=$1
