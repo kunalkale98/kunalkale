@@ -1,13 +1,11 @@
 #!/bin/bash -x
 
-coin=$((RANDOM%2))
-
 Heads=0
 Tails=0
 
-while [ $Heads -ne 11 || $Tails -ne 11 ]
+while [ $Heads -ne 11 -a $Tails -ne 11 ]
 do
-	if [ $coin -eq 0 ]
+	if [ $((RANDOM%2)) -eq 0 ]
 		then
 			((Heads++))
 	else
